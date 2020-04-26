@@ -1,0 +1,139 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    font-family: Helvetica, sans-serif;
+}
+
+#banner-section {
+    padding: 0px;
+    background-image: url(./assets/parallax-lg.jpg);
+    height: 100%;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+}
+
+@media only screen and (max-width: 768px) {
+    #banner-section {
+        background-image: url(./assets/parallax-mobile.jpg);
+    }
+}
+
+.nav-link {
+    color: gray !important;
+    display: inline-block;
+}
+
+.nav-link:hover {
+    color: rgb(120, 120, 226) !important;
+    border-bottom: solid 1px rgb(120, 120, 226);
+}
+
+#title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+#time {
+    position: absolute;
+    color: white;
+    bottom: 3%;
+    right: 5%;
+}
+
+.about-pic {
+    width: 60%;
+    margin: 15% 0%;
+}
+
+.about-bio {
+    margin: 10% 0%;
+    padding-right: 5%;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .about-pic {
+        margin: 10% 0% 10% 0%;
+    } 
+
+    .about-bio {
+        margin: 0% 0% 10% 0%;
+    }
+}
+
+.fa-linkedin {
+    color: blue;
+}
+
+.profile-links {
+    margin: 0% 2%;
+    color: rgb(120, 120, 226);
+}
+
+#portfolio-section {
+    background-image: url(./assets/parallax-portfolio.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#portfolio-section h2 {
+    padding-top: 5%;
+    color: white;
+}
+
+.card {
+    margin: 5% 0%;
+    width: 50%;
+    background-color: transparent;
+    color: white;
+}
+
+.left-button {
+    margin-right: 8%;
+}
+
+.right-button {
+    margin-left: 8%;
+}
+
+.left-button, .right-button {
+    background-color: rgb(30, 73, 190);
+    border-color: rgb(28, 62, 156);
+    color: whitesmoke(252, 186, 88)
+}
+
+.left-button:hover, .right-button:hover {
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+    color: rgb(30, 73, 190);
+}
+
+#skills-row {
+    padding: 5%;
+}
+
+#shields {
+    width: 30%;
+    padding: 5% 0%;
+    margin-left: 5%;
+}
+
+@media only screen and (max-width: 640px) {
+    #shields {
+        width: 80%;
+        padding: 5% 0%;
+    }
+}
